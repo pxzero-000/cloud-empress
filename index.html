@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>角色卡 | 丰穰之墟</title>
+    <title>角色卡 | 云霭公主 </title>
     <style>
         :root {
             --primary-color: #2a5c45;      /* 生态绿 */
@@ -443,8 +443,8 @@
 </head>
 <body>
     <div class="header">
-        <h1>丰穰之墟</h1>
-        <p>在魔法灾变后的世界，书写你的传奇</p>
+        <h1>云霭公主</h1>
+        <p>生态科幻角色扮演游戏</p>
     </div>
 
     <div class="container">
@@ -560,11 +560,6 @@
                         <label>出身背景</label>
                         <select id="character-background">
                             <option value="">选择出身背景</option>
-                            <option value="cloud-dweller">云端遗民</option>
-                            <option value="ruin-scavenger">墟野拾荒者</option>
-                            <option value="bodyhopper">栖身者</option>
-                            <option value="magic-tainted">魔法侵染者</option>
-                            <option value="noble-exile">流放贵族</option>
                             <option value="custom">自定义</option>
                         </select>
                     </div>
@@ -613,7 +608,7 @@
         ];
 
         // 特殊技能（需要高亮显示）
-        const specialSkills = ["#敛虫", "#玄秘", "#施法", "#拾荒", "#植物学"];
+        const specialSkills = [];
 
         // 初始化技能网格
         const skillsContainer = document.getElementById('skills-container');
@@ -662,40 +657,40 @@
             // 根据职业设置推荐技能和初始值
             const recommendations = {
                 mercenary: [
-                    {skill: "#剑术", value: 15},
-                    {skill: "#枪械", value: 12},
-                    {skill: "#狩猎", value: 10},
-                    {skill: "#斗殴", value: 15},
-                    {skill: "#运动", value: 12},
-                    {skill: "#豪饮", value: 8},
-                    {skill: "#维修", value: 10}
+                    {skill: "#剑术", value: 0},
+                    {skill: "#枪械", value: 0},
+                    {skill: "#狩猎", value: 0},
+                    {skill: "#斗殴", value: 0},
+                    {skill: "#运动", value: 0},
+                    {skill: "#豪饮", value: 0},
+                    {skill: "#维修", value: 0}
                 ],
                 noble: [
-                    {skill: "#礼仪", value: 15},
-                    {skill: "#历史", value: 12},
-                    {skill: "#指挥", value: 10},
-                    {skill: "#表演", value: 12},
-                    {skill: "#舞蹈", value: 10},
-                    {skill: "#乐器", value: 8},
-                    {skill: "#语言", value: 12}
+                    {skill: "#礼仪", value: 0},
+                    {skill: "#历史", value: 0},
+                    {skill: "#指挥", value: 0},
+                    {skill: "#表演", value: 0},
+                    {skill: "#舞蹈", value: 0},
+                    {skill: "#乐器", value: 0},
+                    {skill: "#语言", value: 0}
                 ],
                 mage: [
-                    {skill: "#玄秘", value: 18},
-                    {skill: "#施法", value: 16},
-                    {skill: "#植物学", value: 12},
-                    {skill: "#医学", value: 10},
-                    {skill: "#历史", value: 12},
-                    {skill: "#语言", value: 10},
-                    {skill: "#敛虫", value: 14}
+                    {skill: "#玄秘", value: 0},
+                    {skill: "#施法", value: 0},
+                    {skill: "#植物学", value: 0},
+                    {skill: "#医学", value: 0},
+                    {skill: "#历史", value: 0},
+                    {skill: "#语言", value: 0},
+                    {skill: "#敛虫", value: 0}
                 ],
                 messenger: [
-                    {skill: "#飞行", value: 15},
-                    {skill: "#语言", value: 12},
-                    {skill: "#拾荒", value: 14},
-                    {skill: "#精明", value: 12},
-                    {skill: "#杂技", value: 10},
-                    {skill: "#狩猎", value: 8},
-                    {skill: "#驯兽", value: 10}
+                    {skill: "#飞行", value: 0},
+                    {skill: "#语言", value: 0},
+                    {skill: "#拾荒", value: 0},
+                    {skill: "#精明", value: 0},
+                    {skill: "#杂技", value: 0},
+                    {skill: "#狩猎", value: 0},
+                    {skill: "#驯兽", value: 0}
                 ]
             };
             
